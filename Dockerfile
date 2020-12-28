@@ -1,4 +1,4 @@
-FROM debian:sid-slim
+FROM debian:buster-slim
 
 RUN apt-get update && apt-get install -y cron offlineimap ca-certificates
 RUN useradd -ms /bin/bash imapuser
